@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Digital Clock</title>
+  <link rel="stylesheet" href="demo.css" />
+</head>
+<body>
+  <h1 class="clock-heading">DIGITAL CLOCK</h1><br>
+  <div class="container">
+    <div class="date-row">
+      <div>
+        <p>DATE</p>
+        <span id="date">1</span>
+      </div>
+      <div>
+        <p>MONTH</p>
+        <span id="month">JUN</span>
+      </div>
+      <div>
+        <p>YEAR</p>
+        <span id="year">2025</span>
+      </div>
+    </div>
+    <div class="time-row">
+      <p>TIME</p>
+      <div id="time">
+        <span id="hours">11</span>:<span id="minutes">47</span>:<span id="seconds">46</span>
+      </div>
+      <div class="AmPm">
+        <label><input type="radio" id="am">AM</label><br>
+        <label><input type="radio" id="pm" >PM</label>
+      </div>
+    </div>
+    <div class="weekdays">
+      <button><span id="day0">SUN</span> </button> &nbsp;
+     <button><span id="day1">MON</span></button> &nbsp;
+      <button><span id="day2">TUE</span></button> &nbsp;
+     <button><span id="day3">WED</span></button> &nbsp;
+     <button><span id="day4">THU</span></button> &nbsp;
+     <button><span id="day5">FRI</span></button> &nbsp;
+     <button onclick="click"><span id="day6">SAT</span></button>
+    </div>
+  </div>
+  <script src="demo.js"></script>
+</body>
+</html>
